@@ -1,1 +1,1 @@
-# educode-s-texts
+# EduCoder-s-tests
