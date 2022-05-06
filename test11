@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e;
+	cin >> a;
+	if(a%2==0)
+	{
+		cout << "even" << " ";
+		b=a/2;
+		c=3*b;
+		d=c/3;
+		cout << d;
+	}else
+	{
+		cout << "odd" << " ";
+		b=(a+1)/2;
+		c=3*b;
+		d=c/3;
+		cout << d-1;
+	}
+	return 0;
+}
