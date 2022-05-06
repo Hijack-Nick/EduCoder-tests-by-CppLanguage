@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{  
+    int n;  
+    cin>>n;  
+    int sum=n;  
+    for(int i=n;i>=3;)  
+    {  
+        sum+=i/3;  
+        int b=i/3;  
+        i=i%3;  
+        i+=b;  
+    }  
+    cout<<sum;  
+    return 0;  
+}   
