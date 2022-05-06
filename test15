@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>  
+using namespace std;  
+int main(){  
+    string a;  
+    getline(cin,a);//因为cin默认是以空格结束，所以我们用这种方式读入一行有空格的字符串  
+    char c='a';  
+    for(int i=0;i<26;i++)//遍历整个数组当中的字符数量  
+    {  
+       cout<<count(a.begin(),a.end(),c)<<" ";  
+       c++;//C+1就是他的ascci码加1,及A往后的每个字母  
+    }  
+    return 0;  
+}  
