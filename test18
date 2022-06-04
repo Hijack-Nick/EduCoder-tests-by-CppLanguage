@@ -1,0 +1,20 @@
+#include<iostream> 
+#include<algorithm>
+#include<string>
+using namespace std;  
+int main()
+{  
+    string s;  
+    cin>>s;  
+    int k=0,i=-1,j=0;  
+    while((k=s.find('a',k))!=-1)//这个for循环就是查找最后一次出现a的位置  
+    {   i=k;  
+        k++;     
+    }  
+    j=s.find('b',0);//这里寻找第一次出现b的位置  
+    if(i==-1 || i<j || j==-1)//这里就是判断三种情况a不存在b不存在或者ab存在的时候，最后一次出现，a的位置先于第一次出现b的位置  
+    cout<<"True";  
+    else  
+    cout<<"False";  
+    return 0;  
+}  
