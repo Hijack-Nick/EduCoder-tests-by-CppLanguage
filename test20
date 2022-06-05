@@ -1,0 +1,26 @@
+#include<iostream> 
+using namespace std;  
+int main()
+{  
+    int r[]={31,29,31,30,31,30,31,31,30,31,30,31};  
+    int fr[]={31,28,31,30,31,30,31,31,30,31,30,31};  
+    int n,y,ri,sum=0;  
+    scanf("%d-%d-%d",&n,&y,&ri); //把字符转换为十进制整形 
+    if(n%4==0&&n%100!=0 || n%400==0)
+	{
+		for(int i=1;i<y;i++)
+		{
+			sum+=r[i-1];
+		}  
+    }  
+    else
+	{
+		for(int i=1;i<y;i++)
+		{
+			sum+=fr[i-1];
+	    }  
+	} 
+    sum+=ri;  
+    cout<<sum;  
+    return 0;  
+}
