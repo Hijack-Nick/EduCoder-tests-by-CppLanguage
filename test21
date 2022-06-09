@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>  
+using namespace std;  
+int main()
+{  
+    int n,k,sum,huan=0,g1,g2; 
+	  cout << "huan=" << huan << endl; 
+    cin>>n>>k;  
+    huan=sum=n;//刚开始手里有多少根烟蒂  
+    for(;huan>=k;)//只要手里的烟蒂还大于兑换所需烟蒂的数量就一直循环  
+    {  
+        g1=huan/k;//兑换需要多少根烟蒂  
+        sum+=g1;//抽了多少根烟  
+        huan=huan-g1*k+g1;//兑换完还剩下多少烟蒂  
+    }  
+    cout<<sum;  
+}  
